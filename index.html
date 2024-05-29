@@ -1,24 +1,13 @@
 <html>
 
+<head>
+</head>
+
 <body>
     <input id='box'>
     <button id='btn' type='submit'>Save</button>
+    <script src='script.js'></script>
 
-    <script>
-        btn.addEventListener('click', () => {
-            localStorage.setItem('txt', box.value)
-            console.log('Logged:', localStorage.getItem('txt'))
-
-        })
-
-        document.addEventListener('DOMContentLoaded', () => {
-            if (localStorage.getItem('txt') !== null) {
-                x = localStorage.getItem('txt')
-                console.log('Loaded:', x)
-                document.getElementById('box').value = x
-            }
-        })
-    </script>
 </body>
 
 </html>
