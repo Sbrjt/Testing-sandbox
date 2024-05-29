@@ -47,7 +47,7 @@
 	window.addEventListener('beforeunload', () => {
 		if (rank) {
 			localStorage.setItem('rank', rank)
-			// localStorage.setItem('category', category)
+			localStorage.setItem('category', category)
 			// localStorage.setItem('state', state)
 			// localStorage.setItem('gender', gender)
 			// localStorage.setItem('type', type)
