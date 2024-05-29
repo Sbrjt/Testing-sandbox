@@ -1,3 +1,10 @@
+;async () => {
+	const response = await fetch('data.db')
+	const buffer = await response.arrayBuffer()
+	const db = new SQL.Database(new Uint8Array(buffer))
+	db.prepare('select * from tb')
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 	const btn = document.getElementById('btn')
 	const box = document.getElementById('box')
