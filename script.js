@@ -20,7 +20,7 @@
 			return
 		}
 
-		// category = document.getElementById('category').value
+		category = document.getElementById('category').value
 
 		// // Getting selected values from 'branch' and join them (with commas and quotes) to prepare SQL query
 		// branch = Array.from(document.getElementById('branch').selectedOptions)
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	;(function load_local() {
 		if (localStorage.getItem('rank') !== null) {
 			document.getElementById('rank').value = localStorage.getItem('rank')
-			// document.getElementById('category').value = localStorage.getItem('category')
+			document.getElementById('category').value = localStorage.getItem('category')
 			// document.getElementById('state').value = localStorage.getItem('state')
 
 			// const g = localStorage.getItem('gender').slice(1, -1).split("', '")
