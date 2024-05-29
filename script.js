@@ -1,18 +1,5 @@
 ;(async () => {
-	// initializing the database
-	// This takes time, so the script tag is put in head
-	const response = await fetch('data.db')
-	const buffer = await response.arrayBuffer()
-	const db = new SQL.Database(new Uint8Array(buffer))
-	db.prepare('select * from tb') // improves performance by reducing the overhead
-
 	const btn1 = document.getElementById('btn-1')
-
-	if (btn1.disabled === true) {
-		btn1.disabled = false
-		document.getElementById('go').classList.remove('d-none')
-		document.getElementById('spinner').classList.add('d-none')
-	}
 
 	let rank = 0,
 		category,
