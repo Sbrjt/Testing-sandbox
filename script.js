@@ -26,7 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			document.getElementById('state').value = localStorage.getItem('state')
 			const type = localStorage.getItem('type').slice(1, -1).split("', '")
 			for (let i of Array.from(document.getElementsByName('type'))) {
-				if (!type.includes(i.id)) {
+				if (type.includes(i.id)) {
+					i.checked = true
+				} else {
 					i.checked = false
 				}
 			}
