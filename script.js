@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 
 	// save to local storage
+
 	btn.addEventListener('click', () => {
 		localStorage.setItem('txt', txt.value)
 		localStorage.setItem('type', type.value)
