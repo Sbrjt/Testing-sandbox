@@ -14,5 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	btn.addEventListener('click', () => {
 		localStorage.setItem('txt', txt.value)
 		localStorage.setItem('type', type.value)
+		console.log('Saved')
 	})
 })
